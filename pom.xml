@@ -6,9 +6,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.oath.halodb</groupId>
+    <groupId>io.github.martinschneider</groupId>
     <artifactId>halodb</artifactId>
-    <version>0.5.6</version>
+    <version>0.5.7-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>HaloDB</name>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>33.5.0-jre</version>
         </dependency>
 
         <dependency>
@@ -98,8 +98,8 @@
     </dependencies>
 
     <scm>
-        <url>https://github.com/yahoo/HaloDB</url>
-        <developerConnection>scm:git:git@github.com:yahoo/HaloDB.git</developerConnection>
+        <url>https://github.com/martinschneider/HaloDB</url>
+        <developerConnection>scm:git:git@github.com:martinschneider/HaloDB.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -117,7 +117,7 @@
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20.1</version>
+                <version>3.0.0</version>
                 <configuration>
                     <properties>
                         <property>
@@ -136,7 +136,6 @@
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
             </plugin>
-
         </plugins>
 
         <resources>
@@ -149,11 +148,4 @@
         </resources>
 
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/yahoo/halodb</url>
-        </repository>
-    </distributionManagement>
 </project>
